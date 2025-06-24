@@ -13,11 +13,9 @@ let onlyEvenValues = intArr => intArr.filter(num => num % 2 == 0)
 console.log(onlyEvenValues(intArr))
 
 //ex3
-3. Write a function called showFirstAndLast which accepts an array as an argument and returns a new array with only the first and last elements from the function’s argument array. The returned array should only contain elements that are strings. 
+let showFirstAndLast = arr => [arr.find(val => typeof val === 'string'), arr.findLast(val => typeof val === 'string')]
 
-let showFirstAndLast = arr => [arr.at(0), ]
-
-console.log(showFirstAndLast(intArr))
+console.log(showFirstAndLast([4, null, {}, false, 'fisrt', null, 'last', false]))
 
 //ex4
 function vowelCount(str){
@@ -34,3 +32,5 @@ function vowelCount(str){
 }
 
 console.log(vowelCount('ariel oo'))
+
+
